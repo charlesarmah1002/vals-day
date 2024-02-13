@@ -1,0 +1,99 @@
+:root {
+    --red : #AD100B;
+    --yellow : #FFEFDB;
+}
+
+@font-face {
+    font-family: "Glittertine";
+    src: url(fonts/Be\ My\ Glittertine.ttf);
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /* background: var(--red); */
+    background: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100dvh;
+    color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #container {
+    width: min(100%, 375px);
+    height: min(100%, 812px);
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.image-container {
+    width: min(100%, 286px);
+    aspect-ratio: 1;
+    margin: auto;
+}
+
+.image-container img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: "Glittertine";
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+form {
+    text-align: center;
+    font-family: Dancing Script;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background: var(--yellow);
+    font-family: dancing script;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--red);
+}
+
+button:hover {
+    color: var(--yellow);
+    background: var(--red);
+    border: 1px solid var(--yellow);
+}
